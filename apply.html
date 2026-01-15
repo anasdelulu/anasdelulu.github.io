@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>MCAST Redesign | Apply</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+    <div class="container header-bar">
+    <a class="brand" href="index.html">
+        <img src="images/logo-mcast.png" alt="MCAST logo" class="brand__logo" />
+        <span class="brand__text">MCAST</span>
+    </a>
+
+    <nav class="nav" aria-label="Primary">
+        <a href="courses.html">Study</a>
+        <a href="services.html">Services</a>
+        <a class="is-active" href="apply.html" aria-current="page">Research</a>
+        <a href="about.html">About</a>
+    </nav>
+    </div>
+</header>
+
+<main id="main">
+    <section class="hero hero--compact">
+    <div class="container hero__inner">
+        <h1>Apply</h1>
+        <p class="muted">Find dates, start your application, or send a question.</p>
+    </div>
+    </section>
+
+    <section class="section" id="how-to-apply">
+    <div class="container apply-layout">
+        <div class="card">
+        <div class="card__body">
+            <h2>Online application</h2>
+            <p>Quick actions that lead students to the correct next step.</p>
+
+            <div class="btn-stack" aria-label="Apply actions">
+            <a class="btn btn--primary" href="#" aria-label="Online apply (placeholder link)">Online apply</a>
+            <a class="btn" href="courses.html">Browse courses</a>
+            <a class="btn btn--ghost" href="#dates">Application dates</a>
+            </div>
+
+            <p class="muted small">
+            <!-- apply link-->
+            </p>
+        </div>
+        </div>
+        <!-- SEND A MESSAGE PART-->
+
+        <div class="card" id="contact">
+        <div class="card__body">
+            <h2>Send a message</h2>
+            <form
+            class="form"
+            action="mailto:info@mcast.edu.mt"
+            method="post"
+            enctype="text/plain"
+            >
+            <label for="name">Full name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required />
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+
+            <label for="topic">Topic</label>
+            <select id="topic" name="topic" required>
+                <option value="">Choose one…</option>
+                <option value="course-info">Course information</option>
+                <option value="entry-requirements">Entry requirements</option>
+                <option value="application-help">Application help</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button class="btn btn--primary" type="submit">Send</button>
+            </form>
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <section class="section section--muted" id="dates">
+    <div class="container">
+        <header class="section__header">
+        <h2>Application dates</h2>
+        </header>
+
+        <div class="card">
+        <div class="card__body">
+            <form class="search search--wide" action="courses.html" method="get" role="search" aria-label="Search courses for dates">
+            <label class="sr-only" for="date-search">Search</label>
+            <input id="date-search" name="q" type="search" placeholder="Search a course to view dates…" />
+            <button type="submit">Search</button>
+            </form>
+
+            <ul class="list list--dates">
+            <li><strong>Full-time applications:</strong> Dates vary by programme</li>
+            <li><strong>Part-time short courses:</strong> Rolling intakes</li>
+            <li><strong>Support:</strong> Contact us for guidance on deadlines</li>
+            </ul>
+        </div>
+        </div>
+    </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer__inner">
+    <p> MCAST Redesign (Ana Soraia Matos)</p>
+    <a href="#how-to-apply">Back to top</a>
+    </div>
+</footer>
+
+</body>
+</html>
