@@ -3,160 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MCAST Redesign - Home</title> <!-- TITLE PAGE-->
+    <title>MCAST Redesign - Home</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <a class= "skip-link" href="main">Skip to content</a>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-<header class="site-header">
-<div class="container header-bar">
+    <header class="site-header">
+        <div class="container header-bar">
+            <a class="brand" href="index.html">
+                <img src="logo.png" alt="MCAST logo" class="brand__logo">
+                <span class="brand__text">MCAST</span>
+            </a>
 
-<a class="brand" href="index.html">
-<img src="#" alt="MCAST logo" class="brand-logo"> <!-- ADD IMAGE LINK TO LOGO -->
-<span class="brand-text"> MCAST</span>
-</a>
-
-<nav class="nav" aria-label="Primary"> <!-- Accesiblilty w label -->
-    <a href="courses.html">Courses</a>
-    <a href="services.html">Services</a>
-    <a href="apply.html">Apply</a>
-    <a href="about.html">About</a>
-</nav>
-</div>
-
-</header>
-
-<main id="main">
-<section class="hero">
-<div class="container hero">
-<h1 class="sr-only">MCAST Website Redesign</h1>
-
-<form class="Search" action="courses.html#creative" method="get" role="search" aria-label="Search courses">Search
-<label class="sr-only" for="q">Search</label>
-<input id="q" type="search" placeholder="Search for courses, institutes, or campuses.."/> <!-- SEARCH-->
-<button type="submit">Search</button>
-</form>
-</div>
-</section>
-
-<section class="section">
-    <div class="container">
-        <header class="section-header">
-            <h2>Institutes & Campuses</h2>
-            <p>Explore our Institutes and find the right path for you.</p>
+            <nav class="nav" aria-label="Primary">
+                <a href="courses.html">Study</a> <a href="services.html">Services</a>
+                <a href="apply.html">Research</a> <a href="about.html">About</a>
+            </nav>
+        </div>
     </header>
 
-    <div class="stack">
-        <article class="card institute">
-            <img src="#" alt="Institute for the Creative Arts" class="card-img">
-            <div class="card-body">
-                <h3>Institute for the Creative Arts (Mosta) </h3>
-                <p>
-                    Courses across art & design, photography, media production, fashion and performing arts. A place where you learn hands on and real industry skills.
-                </p>
-                <a class="link" href="courses.html#creative-arts">View Courses</a>
+    <main id="main">
+        <section class="hero">
+            <div class="container">
+                <h1 class="sr-only">MCAST Website Redesign</h1>
+                <form class="search search--wide" action="courses.html" method="get" role="search">
+                    <label class="sr-only" for="q">Search courses</label>
+                    <input id="q" name="q" type="search" placeholder="Search for courses, institutes, or campuses.."/>
+                    <button type="submit">🔍</button>
+                </form>
             </div>
-            </article>
+        </section>
 
-            <article class="card-institute">
-                <img src="#" alt="Institute of Applied Sciences" class="card-img"/>
-                <div class="card-body">
-                    <h3>Institute of Applied Sciences (Paola) </h3>
-                    <p>
-                        Progammes for health, science , pharma, environmental and technology , building practical skills for labs and workplaces.
-                    </p>
-                    <a class="link" href="courses.html#applied-sciences">View Courses</a>
+        <section class="section">
+            <div class="container">
+                <div class="stack">
+                    <article class="card--institute">
+                        <img src="#" alt="Institute for the Creative Arts" class="card__img">
+                        <div class="card__body">
+                            <h3 class="institute-title">Institute for the Creatives Arts (Mosta)</h3>
+                            <p class="small muted">The Institute for the Creative Arts offers a growing portfolio of courses, ranging from art and design to graphic design and printing, creative media production, photography and journalism, fashion design and performing arts...</p>
+                            <div class="bar bar--pink"></div> </div>
+                    </article>
 
+                    <article class="card--institute">
+                        <img src="#" alt="Institute of Applied Sciences" class="card__img">
+                        <div class="card__body">
+                            <h3 class="institute-title">Institute of Applied Sciences (Paola)</h3>
+                            <p class="small muted">At the Institute of Applied Sciences, learners are prepared for technological careers within the health, pharmaceutical, environmental, and food and beverage sectors...</p>
+                            <div class="bar bar--green"></div> </div>
+                    </article>
+
+                    <article class="card--institute">
+                        <img src="gozo.jpg" alt="Gozo Campus" class="card__img">
+                        <div class="card__body">
+                            <h3 class="institute-title">Gozo Campus</h3>
+                            <p class="small muted">The MCAST Gozo Campus offers a selection of full-time day courses ranging from MQF Levels 1 to 6 and covering a broad spectrum of vocational disciplines...</p>
+                            <div class="bar bar--blue"></div> </div>
+                    </article>
                 </div>
 
-            </article>
-
-            <article class="card-institute">
-                <img src="#" alt="Gozo Campus" class="card-img"/>
-                <div class="card-body">
-                    <h3>Gozo Campus</h3>
-                    <p>
-                        Full-time and part time courses across MQF Levels 1-6 available.
-                    </p>
-                    <a class="link" href="courses.html#gozo">View Courses</a>
-
+                <div class="cta-row" aria-label="Main Actions">
+                    <a class="btn" href="courses.html#full-time">FULL TIME</a>
+                    <a class="btn" href="courses.html#part-time">PART TIME</a>
+                    <a class="btn" href="apply.html">APPLY</a>
                 </div>
+            </div>
+        </section>
 
-            </article>
+        <section class="section section--muted">
+            <div class="container split">
+                <div>
+                    <h2 class="institute-title">About MCAST</h2>
+                    <p class="small">
+                        Established in 2001, the Malta College of Arts, Science and Technology is the country's leading vocational education and training institution. Six Institutes in Malta and the Gozo Campus...
+                    </p>
+                    <a class="btn btn--ghost" href="about.html">LEARN MORE</a>
+                </div>
+                <aside class="info-pill" aria-label="Quick info">
+                    <h3 class="institute-title">Quick Links</h3>
+                    <ul class="list">
+                        <li><a href="apply.html#how-to-apply" class="muted">How to Apply</a></li>
+                        <li><a href="apply.html#dates" class="muted">Application Dates</a></li>
+                        <li><a href="services.html#student-support" class="muted">Student Support</a></li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
 
-    </div>
+        <section class="section">
+            <div class="container">
+                <header class="section__header">
+                    <h2 class="institute-title">Events</h2>
+                </header>
 
-    <div class="row" aria-label="Main Actions">
-        <a class="btn" href="courses.html#full-time">Full Time</a>
-        <a class="btn" href="courses.html#part-time">Part Time</a>
-        <a class="btn btn-primary" href="apply.html">Apply</a>
-    </div>
-    </div>
+                <div class="grid-3">
+                    <article class="tile">
+                        <img src="event1.jpg" alt="Med Tech World">
+                        <h3>Med Tech World 2025</h3>
+                    </article>
 
-</section>
+                    <article class="tile">
+                        <img src="event2.jpg" alt="Art Gallery">
+                        <h3>Art Gallery</h3>
+                    </article>
 
-<section class="section section-muted">
-    <div class="cointainer split">
-        <div>
-            <h2>About MCAST</h2>
-            <p>
-                MCAST offers vocational education and training through multiple institutes in Malta and in the GOZO campus, lecturers support learners with practical, industry relevant education.
-            </p>
-            <a class="btn btn-ghost" href="about.html">Learn More</a>
+                    <article class="tile">
+                        <img src="event3.jpg" alt="Museum Expo">
+                        <h3>Museum Expo</h3>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer__inner">
+            <p>&copy;MCAST Redesign (Ana Soraia Matos)</p>
+            <a href="apply.html#contact">Contact</a>
         </div>
-        <!-- aside tag for suplementary things-->
-        <aside class="info-pill" aria-label="Quick info">
-            <h3>Quick Links</h3>
-            <ul class="lists">
-                <li> <a href="apply.html#how-to-apply">How to Apply</a></li>
-                <li><a href="apply.html#dates">Application Dates</a></li>
-                <li><a href="services.html#student-support">Student Support</a></li>
-            </ul>
-        </aside>
-    </div>
-</section>
-
-<section class="section">
-    <div class="container">
-        <header class="section-header">
-            <h2>Events</h2>
-            <p>What's happening at MCAST.</p>
-        </header>
-
-        <div class="grid-3">
-            <article class="title">
-                <img src="#" alt="Event Photo 1"> <!-- ADD PHOTO LINK1 -->
-                <h3>Med Tech World 2025</h3>
-            </article>
-
-            <article class="tile">
-                <img src="#" alt="Event Photo 2"> <!-- ADD PHOTO-->
-                <h3>
-                    Art Gallery
-                </h3>
-            </article>
-
-            <article class="title">
-                <img src="#" alt="Event Photo 3"> <!-- ADD -->
-                <h3>Museum Expo</h3>
-            </article>
-        </div>
-    </div>
-</section>
-</main>
-
-<footer class="site-footer">
-    <div class="cointainer-footer-inner"> <!-- span tag for incline underneath-->
-        <p> <span id="year"></span> MCAST Redesign ( Ana Soraia Matos )</p>
-        <a href="apply.html#contact">Contact</a>
-    </div>
-</footer>
-
-
-
-
-
+    </footer>
 </body>
 </html>
