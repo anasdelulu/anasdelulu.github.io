@@ -317,9 +317,88 @@ border:1px solid #c7c7c7;
     .card--institute{ grid-template-columns: 1fr; }
 }
 
+.page-gap { padding-top: 10px; }
+
+.block{
+    background: #f2f2f2;
+    border-radius: 22px;
+    padding: 22px;
+    margin: 18px 0; }
+
+    .block-grid{
+        display: grid;
+        grid-template-columns: 220px 1fr;
+        gap: 24px;
+        align-items: start;
+    }
+
+    .block-label{
+        display: grid;
+        gap: 6px;
+        font-weight: 700;
+        color: #0a1a4a;
+    }
+    
+    .block-label .icon{
+        width: 18px;
+        height: 18px;
+        border-radius: 6px;
+        background: #d9d9d9;
+        display: inline-block;
+    }
+
+    .block-title{
+        margin: 0;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 0.2px;
+        color: #0a1a4a;
+        font-size: 15px; }
+
+
+        .block-bar{
+            height: 7px;
+            border-radius: 999px;
+            margin-top: 14px;
+        }
+        .block-bar--pink{ background: #d44b9a; }
+        .block-bar--green{ background: #53a548; }
+        .block-bar--blue{ background: #2f87c7; }
+        .block-bar--navy{ background: #0a1a4a; }
+        
+
+        .hero .search{
+            max-width: 840px;
+            margin: 0 auto; }
+
+            .search button{
+                width: 52px;
+                height: 44px;
+                border-radius: 14px;
+                padding: 0; }
+
+                .about-grid{
+                    display: grid;
+                    grid-template-columns: 1.25fr 0.75fr;
+                    gap: 24px;
+                    align-items: start;
+                }
+                
+                .quick-links-box{
+                    background: #fff;
+                    border: 1px solid #e5e6ea;
+                    border-radius: 18px;
+                    padding: 18px; }
+
+                    .quick-links-box ul{ margin: 10px 0 0; padding-left: 18px; }
 
 
 
+                    @media (max-width: 900px){
+                        .block-grid{ grid-template-columns: 1fr; }
+                        .about-grid{ grid-template-columns: 1fr; }
+                    }
+                    
 
 .site-header { background: #0a1a4a; color: #fff; padding: 16px 0;}
 .footer__inner { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap;}
