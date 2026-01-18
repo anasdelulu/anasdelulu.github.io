@@ -65,7 +65,7 @@ img{ max-width: 100%; display: block;}
     padding: 8px 10px;
     border-radius: 10px;}
 
-.nav a :hover { background: rgba(255, 255, 255, 0.12);}
+.nav a:hover { background: rgba(255, 255, 255, 0.12);}
 .nav a.is-active { background: rgba( 255,255,255,0.18);}
 
 
@@ -74,6 +74,9 @@ img{ max-width: 100%; display: block;}
 
 .hero { padding: 30px 0 10px;}
 .hero--compact { padding: 18px 0 12px;}
+
+
+
 
 .search {
     display: grid; 
@@ -101,8 +104,7 @@ img{ max-width: 100%; display: block;}
     background: #0a1a4a; 
     color: #fff; 
     font-weight: 800; 
-    cursor: pointer;
-}
+    cursor: pointer;}
 
 .search--wide { max-width: 720px; }
 
@@ -283,7 +285,59 @@ width:100%;
 padding:12px 12px;
 border-radius:14px;
 border:1px solid #c7c7c7;
+
+
 }
+
+
+/*ABOUT*/
+
+.about-grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 48px;
+    align-items: start;
+}
+
+
+.about-text{
+    max-width: 680px;
+}
+
+.about-grid h1{
+    margin-top: 0;
+}
+
+.about-grid h2{
+    margin-top: 0;
+
+}
+
+.goals-column h2{
+    margin-top: 0;
+    margin-bottom: 18px;
+}
+
+.goals-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.goal-card{
+    background: #fff;
+    border: 1px solid #e5e6ea;
+    border-radius: 18px;
+    padding: 18px;
+}
+
+.goal-card h3{
+    margin-top: 0;
+    font-size: 14px;
+    font-weight: 900;
+}
+
+
 
 /*FOOTER*/
 
@@ -315,6 +369,9 @@ border:1px solid #c7c7c7;
     .split{ grid-template-columns: 1fr; }
     .apply-layout{ grid-template-columns: 1fr; }
     .card--institute{ grid-template-columns: 1fr; }
+    .about-grid{grid-template-columns: 1fr;}
+    .goals-grid{grid-template-columns: 1fr;}
+    
 }
 
 .page-gap { padding-top: 10px; }
@@ -377,12 +434,7 @@ border:1px solid #c7c7c7;
                 border-radius: 14px;
                 padding: 0; }
 
-                .about-grid{
-                    display: grid;
-                    grid-template-columns: 1.25fr 0.75fr;
-                    gap: 24px;
-                    align-items: start;
-                }
+                
                 
                 .quick-links-box{
                     background: #fff;
@@ -394,10 +446,6 @@ border:1px solid #c7c7c7;
 
 
 
-                    @media (max-width: 900px){
-                        .block-grid{ grid-template-columns: 1fr; }
-                        .about-grid{ grid-template-columns: 1fr; }
-                    }
                     
 
 
